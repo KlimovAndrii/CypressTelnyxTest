@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "testOnHeadedMode": "npx cypress open",
+    "testOnHeadlessMode": "npx cypress run"
   },
   "author": "",
   "license": "ISC",
