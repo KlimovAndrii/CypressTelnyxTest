@@ -2,10 +2,10 @@ import MainPage from '../pages/main.page.js';
 import SupportPage from '../pages/support.page.js';
 import CookiesHelper from "../helpers/cookies.helper";
 
-describe('Test telnyx.com', () => {
+describe('Open Support page from main page and see contacts', () => {
   before(() => { MainPage.visit(); });
 
-  it('Telnyx Support Contacs', () => {
+  it('contacts is displayed', () => {
     CookiesHelper.acceptCookies();
     MainPage.clickSupportCentreLink();
     SupportPage.isPageOpened();

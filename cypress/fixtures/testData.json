@@ -1,5 +1,10 @@
 {
     "emailDomen": "@gmail.com",
     "fullName": "Egorka Paparatnik",
-    "password": "QW_a12345678"
+    "password": "QW_a12345678",
+    "invalidLogin": "test_mail@gmail.com",
+    "invalidPass": "test_password",
+    "validLogin": "ag.klimov@gmail.com",
+    "validPass": "Dja4125_000000"
+
 }

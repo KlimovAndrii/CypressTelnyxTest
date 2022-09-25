@@ -3,15 +3,17 @@ import UserPage from '../pages/userpage.page.js';
 import LogInPage from '../pages/login.page.js';
 import CookiesHelper from "../helpers/cookies.helper";
 
-describe('Test telnyx.com', () => {
+const testData = require("../fixtures/testData.json");
+
+describe('Login on Telnyx from Login page with valid data', () => {
   before(() => { MainPage.visit(); });
 
-  it('Login on telnyx.com (valid data)', () => {
+  it('user page should open', () => {
     CookiesHelper.acceptCookies();
     MainPage.clickLoginButton();  
     LogInPage.isPageOpened();
-    LogInPage.fillinputEmailField('ag.klimov@gmail.com');
-    LogInPage.fillinputPasswordField('Dja4125_000000');
+    LogInPage.fillinputEmailField(testData.validLogin);
+    LogInPage.fillinputPasswordField(testData.validPass);
     LogInPage.clickRememberMeCheckbox();
     LogInPage.clickLogInPageButton();
     UserPage.isPageOpened();

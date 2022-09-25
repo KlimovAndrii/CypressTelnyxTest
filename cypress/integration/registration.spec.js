@@ -6,12 +6,12 @@ import CookiesHelper from "../helpers/cookies.helper";
 const randomstring = require("randomstring");
 const testData = require("../fixtures/testData.json");
 
-describe('Test telnyx.com', () => {
+describe('Registration on Telnyx from Sign Up page with valid data', () => {
   before(() => {
     MainPage.visit();
   });
 
-  it('Registration on telnyx.com', () => {
+  it('should appear a message that the email has been sent', () => {
     CookiesHelper.acceptCookies();
     MainPage.clickSingUpButton();
     SingUpPage.isPageOpened();

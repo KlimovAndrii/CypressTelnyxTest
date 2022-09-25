@@ -2,10 +2,10 @@ import MainPage from '../pages/main.page.js';
 import CookiePolicyPage from '../pages/cookiepolicy.page.js';
 import CookiesHelper from "../helpers/cookies.helper";
 
-describe('Test telnyx.com', () => {
+describe('Open Cookie Policy page from main page', () => {
   before(() => { MainPage.visit(); });
 
-  it('Telnyx Cookie Policy', () => {
+  it('should be opened Сookie Policy page', () => {
     CookiesHelper.acceptCookies();
     MainPage.scrollIntoCookiiePolicyButtonView();
     MainPage.clickCookiiePolicyButton();

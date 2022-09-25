@@ -5,12 +5,12 @@ import MainPage from '../pages/main.page.js';
 import MissionControlPage from '../pages/missioncontrol.page.js';
 import SingUpPage from '../pages/singup.page.js';
 
-describe('Test telnyx.com', () => {
+describe('Open Sign Up page from Mission Control page by clicked Sing Up button', () => {
   before(() => {
     MainPage.visit();
   });
 
-  it('Mission Control page', () => {
+  it('Sing Up page should be open', () => {
     CookiesHelper.acceptCookies();    
     MainPage.hoverToResourcesMenu();
     MainPage.clickMissionControlButton();
