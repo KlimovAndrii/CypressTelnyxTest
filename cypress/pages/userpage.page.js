@@ -1,7 +1,7 @@
 import Page from "./page";
 
 class UserPage extends Page {
-    userPageHeaderLocator = `//h1[text()="Numbers / Search & Buy Numbers"]`;
+    userPageHeaderLocator = `//h4[text()="Welcome to your Mission Control Portal"]`;
 
     isPageOpened() { super.isPageOpened(this.userPageHeaderLocator); }
 }
