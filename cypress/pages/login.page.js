@@ -20,10 +20,3 @@ class LogInPage extends Page {
 }
 
 export default new LogInPage(); 
-
-
-    // get inputEmailField() { return cy.xpath(`//input[@name="email" and @class="ui-reactv2-input"]`); }
-    // get inputPasswordField() { return cy.xpath(`//input[@name="password"]`); }
-    // get rememberMeCheckbox() { return cy.xpath(`//input[@type="checkbox"]`); }
-    // get logInPageButton() { return cy.xpath(`//button[@type="submit" and contains(text(), 'Log in')]`); }
-    // get errorMessage() { return cy.xpath(`//span[@class="Message__MessageCopy-sc-1lbs5ge-2 ilxvtf"]`); } //пропадает
