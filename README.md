@@ -11,5 +11,3 @@ Simple testing project.
 ## Run test
 1. Run test in headless mode **npm run testOnHeadlessMode** command.
 2. Run test in headed mode **npm run testOnHeadedMode** command.
-
-**Caution: Registration test will be failed because of captcha. Captcha added 26.09.2022 before adding the test worked.**
