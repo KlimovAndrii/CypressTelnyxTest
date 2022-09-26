@@ -1,7 +1,7 @@
 import Page from "./page";
 
 class UserPage extends Page {
-    userPageHeaderLocator = `//h4[text()="Welcome to your Mission Control Portal"]`;
+    userPageHeaderLocator = `//div[@data-testid="flex" and @class="Flex__FlexComponent-fGtahC fmDnDf tx-2c709E"]`;
 
     isPageOpened() { super.isPageOpened(this.userPageHeaderLocator); }
 }
