@@ -3,7 +3,7 @@ import Page from "./page";
 require('cypress-xpath');
 
 class MissionControlPage extends Page {
-	missionControlHeaderLocator = `//span[@class="sc-7b3980dc-1 dlshfZ" and text()="Mission Control"]`;
+	missionControlHeaderLocator = `//h1//span[text()="Mission Control Portal"]`;
 	missionControlSingUpButtonLocator = `//main//a[@href="/sign-up" and text()="Sign up"]`;
 
 	isPageOpened() { super.isPageOpened(this.missionControlHeaderLocator) }
